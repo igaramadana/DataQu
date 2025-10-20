@@ -1,0 +1,217 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "demo@example.com",
+      "password": "demo123",
+      "name": "Demo User",
+      "phone": "+62812345678",
+      "balance": 365000
+    },
+    {
+      "id": "4568",
+      "email": "email@example.com",
+      "password": "demo123",
+      "name": "Iga Ramadana Sahputra",
+      "phone": "08560465730",
+      "balance": 30000
+    },
+    {
+      "id": "f5f6",
+      "email": "igrmdns085@gmail.com",
+      "password": "admin123",
+      "name": "IGA RAMADANA SAHPUTRA",
+      "phone": "49384983483",
+      "balance": 50000
+    }
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "name": "Paket Internet 1GB",
+      "description": "Paket internet 1GB dengan kuota aktif 30 hari",
+      "price": 15000,
+      "quota": "1GB",
+      "validity": "30 Hari",
+      "category": "daily",
+      "features": [
+        "Kuota 24 Jam",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Paket Internet 3GB",
+      "description": "Paket internet 3GB dengan kuota aktif 30 hari",
+      "price": 35000,
+      "quota": "3GB",
+      "validity": "30 Hari",
+      "category": "daily",
+      "features": [
+        "Kuota 24 Jam",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed",
+        "Bonus Nelpon 50 Menit"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Paket Internet 5GB",
+      "description": "Paket internet 5GB dengan kuota aktif 30 hari",
+      "price": 50000,
+      "quota": "5GB",
+      "validity": "30 Hari",
+      "category": "weekly",
+      "features": [
+        "Kuota 24 Jam",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed",
+        "Bonus Nelpon 100 Menit"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Paket Internet 10GB",
+      "description": "Paket internet 10GB dengan kuota aktif 30 hari",
+      "price": 85000,
+      "quota": "10GB",
+      "validity": "30 Hari",
+      "category": "monthly",
+      "features": [
+        "Kuota 24 Jam",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed",
+        "Bonus Nelpon 200 Menit",
+        "Gratis SMS 100"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Paket Internet 25GB",
+      "description": "Paket internet 25GB dengan kuota aktif 30 hari",
+      "price": 150000,
+      "quota": "25GB",
+      "validity": "30 Hari",
+      "category": "monthly",
+      "features": [
+        "Kuota 24 Jam",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed",
+        "Bonus Nelpon Unlimited",
+        "Gratis SMS Unlimited"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Paket Internet 50GB",
+      "description": "Paket internet 50GB dengan kuota aktif 30 hari",
+      "price": 250000,
+      "quota": "50GB",
+      "validity": "30 Hari",
+      "category": "monthly",
+      "features": [
+        "Kuota 24 Jam",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed",
+        "Bonus Nelpon Unlimited",
+        "Gratis SMS Unlimited",
+        "Priority Network"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Paket Unlimited Mingguan",
+      "description": "Paket internet unlimited dengan kuota aktif 7 hari",
+      "price": 45000,
+      "quota": "Unlimited",
+      "validity": "7 Hari",
+      "category": "weekly",
+      "features": [
+        "Kuota 24 Jam",
+        "Unlimited FUP 1GB/Hari",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Paket Unlimited Bulanan",
+      "description": "Paket internet unlimited dengan kuota aktif 30 hari",
+      "price": 120000,
+      "quota": "Unlimited",
+      "validity": "30 Hari",
+      "category": "monthly",
+      "features": [
+        "Kuota 24 Jam",
+        "Unlimited FUP 2GB/Hari",
+        "Berlaku Nasional",
+        "Gratis Akses Sosmed",
+        "Bonus Nelpon 500 Menit"
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "userId": "1",
+      "packageId": "3",
+      "packageName": "Paket Internet 5GB",
+      "amount": 50000,
+      "status": "completed",
+      "date": "2025-01-15T10:30:00Z",
+      "paymentMethod": "balance"
+    },
+    {
+      "id": "3923",
+      "userId": "4568",
+      "packageId": "2",
+      "packageName": "Paket Internet 3GB",
+      "amount": 35000,
+      "status": "completed",
+      "date": "2025-10-18T16:51:05.578Z",
+      "paymentMethod": "balance"
+    },
+    {
+      "id": "4b38",
+      "userId": "1",
+      "packageId": "4",
+      "packageName": "Paket Internet 10GB",
+      "amount": 85000,
+      "status": "completed",
+      "date": "2025-10-18T17:04:06.314Z",
+      "paymentMethod": "balance"
+    },
+    {
+      "id": "3e8f",
+      "userId": "1",
+      "packageId": "3",
+      "packageName": "Paket Internet 5GB",
+      "amount": 50000,
+      "status": "completed",
+      "date": "2025-10-18T17:04:06.352Z",
+      "paymentMethod": "balance"
+    },
+    {
+      "id": "fae7",
+      "userId": "4568",
+      "packageId": "2",
+      "packageName": "Paket Internet 3GB",
+      "amount": 35000,
+      "status": "completed",
+      "date": "2025-10-18T17:07:51.233Z",
+      "paymentMethod": "balance"
+    },
+    {
+      "id": "4397",
+      "userId": "f5f6",
+      "packageId": "3",
+      "packageName": "Paket Internet 5GB",
+      "amount": 50000,
+      "status": "completed",
+      "date": "2025-10-19T15:17:53.505Z",
+      "paymentMethod": "balance"
+    }
+  ],
+  "cart": []
+}
