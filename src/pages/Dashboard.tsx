@@ -13,6 +13,7 @@ import {
 import { Search } from '@mui/icons-material';
 import axios from 'axios';
 import PackageCard from '../components/PackageCard';
+import { useAuth } from '../contexts/AuthContext';
 
 const API_URL = 'http://localhost:3001';
 
@@ -28,6 +29,7 @@ interface Package {
 }
 
 const Dashboard = () => {
+  const { user, isAuthenticated } = useAuth();
   const [packages, setPackages] = useState<Package[]>([]);
   const [filteredPackages, setFilteredPackages] = useState<Package[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -70,25 +72,23 @@ const Dashboard = () => {
 
   return (
     <Container maxWidth="xl" sx={{ py: 4 }}>
-<Box mb={4}>
-  <Box display="flex" alignItems="baseline" flexWrap="wrap" gap={1}>
-    <Typography variant="h3" sx={{ fontWeight: 700 }}>
-      Pilih Paket Internet
-    </Typography>
-    {isAuthenticated && user && (
-      <Typography 
-        variant="h3" 
-        color="primary"
-        sx={{ fontWeight: 700 }}
-      >
-        {user.name}
-      </Typography>
-    )}
-  </Box>
-  <Typography variant="body1" color="text.secondary" sx={{ mt: 1 }}>
-    Temukan paket yang sesuai dengan kebutuhan Anda
-  </Typography>
-</Box>
+      <Box mb={4}>
+        <Typography variant="h3" sx={{ mb: 1, fontWeight: 700 }}>
+          Pilih Paket Internet
+        </Typography>
+        {isAuthenticated && user && (
+        <Typography 
+          variant="h6" 
+          sx={{ 
+            mb: 1,
+            color: 'text.secondary',
+            fontStyle: 'semibold'
+          }}
+        >
+          Halo, {user.name}! Mari temukan paket yang sesuai untuk Anda
+        </Typography>
+      )}
+      </Box>
 
       <Box mb={4}>
         <Grid container spacing={2} alignItems="center">
